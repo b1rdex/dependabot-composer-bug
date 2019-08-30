@@ -1,0 +1,271 @@
+{
+    "name": "100sp/100sp.ru",
+    "description": "",
+    "keywords": [],
+    "license": "proprietary",
+    "require": {
+        "php": ">=7.3",
+        "ext-PDO": "*",
+        "ext-SimpleXML": "*",
+        "ext-amqp": "*",
+        "ext-ctype": "*",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-fileinfo": "*",
+        "ext-ftp": "*",
+        "ext-iconv": "*",
+        "ext-igbinary": "*",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-mbstring": "*",
+        "ext-mysqli": "*",
+        "ext-openssl": "*",
+        "ext-pcre": "*",
+        "ext-pdo_mysql": "*",
+        "ext-soap": "*",
+        "ext-sockets": "*",
+        "ext-xmlwriter": "*",
+        "ext-zip": "*",
+        "ext-zlib": "*",
+        "ackintosh/ganesha": "^0.4.0",
+        "aws/aws-sdk-php": "^3.19",
+        "b1rdex/predis-compressible": "^0.4",
+        "b1rdex/text-lang-correct": "^0.1",
+        "beberlei/assert": "^3.2",
+        "codemonkeys-ru/gcm-message": "^0.5",
+        "ddtraceweb/smtp-validator-email": "^2.2",
+        "doctrine/annotations": "^1.4",
+        "doctrine/orm": "^2.5",
+        "dompdf/dompdf": "^0.8.2",
+        "duccio/apns-php": "~1.0",
+        "egulias/email-validator": "~2.1",
+        "florianv/swap": "^4.0",
+        "geoip2/database-city": "0",
+        "geoip2/database-country": "0",
+        "geoip2/geoip2": "^2.4",
+        "giggsey/libphonenumber-for-php": "^8.10",
+        "guzzlehttp/guzzle": "~6.3",
+        "iignatov/lightopenid": "~1.0.0",
+        "ipol/dpd.sdk": "v0.2.1.2",
+        "jakeasmith/http_build_url": "^1",
+        "league/flysystem": "^1.0",
+        "league/flysystem-webdav": "^1.0",
+        "maba/gentle-force": "^0.3.0",
+        "martinsik/google-chart-generator": "^2.0",
+        "matthiasmullie/minify": "^1.3",
+        "maxakawizard/phpmorphy": "^1.3",
+        "mobiledetect/mobiledetectlib": "^2.8",
+        "monolog/monolog": "^1.24",
+        "nicolab/php-ftp-client": "^1.4",
+        "nikic/iter": "^2.0",
+        "nojacko/email-validator": "~1.0",
+        "paragraph1/php-fcm": "~0.7",
+        "pear/numbers_words": "~0.18",
+        "penicylline/skype-bot-sdk": "dev-master",
+        "php-di/php-di": "~6.0",
+        "php-http/guzzle6-adapter": "^2.0",
+        "php-http/message": "^1.5",
+        "phpoffice/phpspreadsheet": "^1.2",
+        "phpseclib/phpseclib": "dev-master#5e7d391 as 2.0.15",
+        "predis/predis": "~1.1.0",
+        "ramsey/uuid": "^3.5",
+        "sebastian/diff": "^3.0",
+        "stripe/stripe-php": "^6.40",
+        "swiftmailer/swiftmailer": "^6.2",
+        "symfony/cache": "^4.2",
+        "symfony/debug": "^4.2",
+        "symfony/event-dispatcher": "^4.2",
+        "symfony/finder": "^4.2",
+        "symfony/lock": "^4.2",
+        "symfony/process": "^4.2",
+        "symfony/var-dumper": "^4.2",
+        "telegram-bot/api": "^2.3",
+        "yiisoft/yii": "~1",
+        "zendframework/zend-diactoros": "^2.1",
+        "zendframework/zend-httphandlerrunner": "^1.1",
+        "zf1/zend-barcode": "^1.12",
+        "zf1/zend-pdf": "^1.12"
+    },
+    "replace": {
+        "paragonie/random_compat": ">2",
+        "symfony/polyfill-ctype": "*",
+        "symfony/polyfill-iconv": "*",
+        "symfony/polyfill-intl-idn": "*",
+        "symfony/polyfill-mbstring": "*",
+        "symfony/polyfill-php56": "*",
+        "symfony/polyfill-php70": "*",
+        "symfony/polyfill-php71": "*",
+        "symfony/polyfill-php72": "*",
+        "symfony/polyfill-php73": "*"
+    },
+    "require-dev": {
+        "blastcloud/guzzler": "^1.5",
+        "codeception/codeception": "~3.0",
+        "friendsofphp/php-cs-fixer": "~2.5",
+        "ifsnop/mysqldump-php": "~2.5",
+        "jakub-onderka/php-parallel-lint": "^1.0",
+        "johnkary/phpunit-speedtrap": "^3.0",
+        "kalessil/production-dependencies-guard": "dev-master",
+        "localheinz/composer-normalize": "^1.1",
+        "ltd-beget/sphinx-configurator": "1.0.7.3",
+        "phpstan/phpstan": "^0.11",
+        "phpstan/phpstan-beberlei-assert": "^0.11.1",
+        "phpstan/phpstan-phpunit": "^0.11.2",
+        "phpunit/phpunit": "^8",
+        "roave/security-advisories": "dev-master",
+        "slam/phpstan-extensions": "^3.5",
+        "zhuravljov/yii2-debug": "^1.5"
+    },
+    "config": {
+        "apcu-autoloader": true,
+        "platform": {
+            "php": "7.3.5"
+        },
+        "sort-packages": true
+    },
+    "autoload": {
+        "psr-4": {
+            "Sp\\": "src/",
+            "YiiApp\\config\\di\\": "protected/config/di/",
+            "YiiApp\\commands\\": "protected/commands/",
+            "YiiApp\\components\\": "protected/components/",
+            "YiiApp\\controllers\\": "protected/controllers/",
+            "YiiApp\\extensions\\": "protected/extensions/",
+            "YiiApp\\filters\\": "protected/filters/",
+            "YiiApp\\helpers\\": "protected/helpers/",
+            "YiiApp\\models\\": "protected/models/",
+            "YiiApp\\modules\\": "protected/modules/",
+            "YiiApp\\validators\\": "protected/validators/",
+            "YiiApp\\widgets\\": "protected/widgets/",
+            "Legacy\\": "public_html/includes/classes/"
+        },
+        "classmap": [
+            "protected/extensions/yii-bootstrap/form/",
+            "protected/extensions/yii-bootstrap/widgets/",
+            "protected/models/",
+            "protected/modules/auth/models/",
+            "protected/modules/cost/models/PurchaseCost.php",
+            "protected/modules/distributor/models/",
+            "protected/modules/favorites/models/Favorites.php",
+            "protected/modules/like/models/Likes.php",
+            "protected/modules/news/models/PurchaseNews.php",
+            "protected/modules/notes/models/Notes.php",
+            "protected/modules/megapurchase/models/MegapurchaseForm.php",
+            "protected/modules/mp/modules/billing/models/",
+            "protected/modules/mp/modules/bot/models/BotParams.php",
+            "protected/modules/mp/modules/card/models/CardsGenerationForm.php",
+            "protected/modules/mp/modules/report/models/ReportForm.php",
+            "protected/modules/mp/modules/sender/models/SendingEmailForm.php",
+            "protected/modules/mp/modules/topline/models/Toplines.php",
+            "protected/modules/org/models/",
+            "protected/modules/org/modules/payments/models/",
+            "protected/modules/org/modules/transfers/models/",
+            "protected/modules/pg/models/PgPayments.php",
+            "protected/modules/pg/models/PgRefunds.php",
+            "protected/modules/profile/models/",
+            "protected/modules/shop/models/",
+            "protected/modules/sticker/models/",
+            "protected/modules/referrals/models/Referrals.php",
+            "protected/modules/remark/models/",
+            "src/NotNamespacedClasses/BizRule.php",
+            "src/NotNamespacedClasses/BizRuleRaw.php",
+            "src/NotNamespacedClasses/InstofAuthValidator.php",
+            "src/NotNamespacedClasses/TagDependency.php",
+            "src/Yii/Yii.php"
+        ]
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sp\\Tests\\": "tests/",
+            "YiiApp\\tests\\": "protected/tests/"
+        },
+        "classmap": [
+            "vendor/zhuravljov/yii2-debug/Yii2Debug.php"
+        ]
+    },
+    "repositories": [
+        {
+            "type": "package",
+            "package": {
+                "name": "geoip2/database-city",
+                "version": "0.0.0",
+                "dist": {
+                    "type": "gzip",
+                    "url": "https://geolite.maxmind.com/download/geoip/database/GeoLite2-City.mmdb.gz"
+                }
+            },
+            "name": "geoip2/database-city"
+        },
+        {
+            "type": "package",
+            "package": {
+                "name": "geoip2/database-country",
+                "version": "0.0.0",
+                "dist": {
+                    "type": "gzip",
+                    "url": "https://geolite.maxmind.com/download/geoip/database/GeoLite2-Country.mmdb.gz"
+                }
+            },
+            "name": "geoip2/database-country"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/b1rdex/yii"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/b1rdex/sphinx-configurator"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/b1rdex/google-chart-generator"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/b1rdex/ApnsPHP"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/b1rdex/stringstream"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/b1rdex/sphinx-configuration-tokenizer"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/b1rdex/dpd-php-sdk"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/AndreyChuchmanskiy/skype-bot-sdk.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/b1rdex/zend-pdf.git"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/danog/phpseclib"
+        },
+        {
+            "type": "vcs",
+            "url": "https://github.com/danog/dns"
+        },
+        {
+            "type": "composer",
+            "url": "https://packagist.org"
+        },
+        {
+            "packagist": false
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true,
+    "scripts": {
+        "cs:fix": "php-cs-fixer fix -vvv",
+        "cs:lint": "php-cs-fixer fix --diff -vvv --dry-run",
+        "phpstan": "phpstan analyse -l1 -cphpstan.neon src/ public_html/includes/classes/ tests/ protected/tests/ protected/controllers/"
+    }
+}
